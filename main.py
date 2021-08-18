@@ -2,6 +2,5 @@ import streamlit as st
 import pandas as pd
 
 st.title('File upload app!')
-filename = st.file_uploader('')
-df = pd.read_csv(filename, encoding='utf-8')
-st.write(df)
+file = st.file_uploader('')
+print(file.read().decode("utf-8"))
