@@ -6,6 +6,5 @@ def get_total_chat():
   return [line.decode("utf-8") for line in lines]
   
 
-st.title('File upload app!')
 total_chat = get_total_chat()
 st.write(total_chat)
