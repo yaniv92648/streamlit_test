@@ -3,7 +3,5 @@ import pandas as pd
 
 st.title('File upload app!')
 filename = st.file_uploader('').name
-st.write(f'This is the file name:ABC{filename}ABC')
-# with open(filename, encoding="utf-8") as file:
-#   total_chat = file.readlines()
-# st.write(total_chat)
+df = pd.read_csv(filename, encoding='utf-8')
+st.write(df)
