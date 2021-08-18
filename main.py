@@ -4,4 +4,4 @@ import pandas as pd
 st.title('File upload app!')
 file = st.file_uploader('')
 full_text = file.read().decode("utf-8")
-type(full_text)
+st.write(type(full_text))
