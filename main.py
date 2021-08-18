@@ -1,5 +1,4 @@
 import streamlit as st
-import io
 
 st.title('File upload app!')
 
